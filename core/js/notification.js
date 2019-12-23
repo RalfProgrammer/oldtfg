@@ -1,0 +1,3 @@
+Notification = function(type, name){
+
+}

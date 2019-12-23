@@ -1,0 +1,293 @@
+
+/*
+############################################################################
+                                   NOTIFICATIONS
+############################################################################
+*/
+
+.notification {
+    width: 100%;
+    line-height: 20px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+}
+
+.notification.error {
+    color: #FFFFFF;
+    background-color: #C0392B;
+}
+
+main , nav{
+    display: block;
+}
+/*
+############################################################################
+                                   GENERAL CLASSES
+############################################################################
+*/
+
+.box {
+    color: #444;
+    position: relative;
+    padding: 15px;
+    font-family: Open Sans;
+    font-size: 14px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    border-bottom-width: 2px;
+    border-top-width: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.box .header_box {
+    padding: 0 0 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #d8d8d8;
+    color: #666;
+    font-weight: normal;
+}
+
+.box .header_box .header_title{
+    width: 70%;
+    display: inline-block;
+}
+.box .header_box i{
+    margin-right: 5px;
+    color: #666;
+    cursor: default;
+}
+.box .header_box .header_action{
+    float: right;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.box .header_box .header_action i{
+    cursor: pointer;
+}
+
+.section-header{
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+    display: block;
+    font-size: 16px;
+    background-color: #f7f7f7;
+}
+.section-header i{
+    margin-right: 5px;
+    cursor: default;
+    color: #666;
+}
+
+.dots {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*
+############################################################################
+                                   POPUP
+############################################################################
+*/
+
+.popup {
+    position: absolute;
+    width: 80%;
+    display: block;
+    background-color: transparent;
+    z-index: 1500;
+    box-shadow: 0 2px 40px 0 rgba(0,0,0,.4);
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.popup.min {
+    width: 50%;
+    height: 25%;
+    min-height: 140px;
+    min-width: 100px;
+    bottom: 0;
+    right: 0;
+    padding: 2%;
+}
+.popup.min h2,
+.popup.min a.button,
+.popup.min #sip_localVideo{
+    display: none;
+}
+.popup .popupHeader{
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 6px 10px;
+    color: #ffffff;
+}
+.popup .popupHeader nav{
+    color: #FFFFFF;
+    float: right;
+    font-size: 24px;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.popup .popupHeader nav i{
+    color: inherit;
+}
+.popup .popupWrapper{
+    border: 1px solid #EBEBED;
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    /*height: -moz-calc(100% - 30px);*/
+    /*height: -webkit-calc(100% - 30px);*/
+    /*height: calc(100% - 30px);*/
+    position: relative;
+}
+.popup_modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #666;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.login_error{
+    background-color: #D9534F;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto 10px;
+    text-align: center;
+    border-radius: 3px;
+}
+.login_logo{
+    border-radius: 100%;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto 10px;
+    max-width: 200px;
+}
+
+.login_logo img {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+
+/*
+############################################################################
+                                   SEARCHER
+############################################################################
+*/
+
+.searcher {
+    display: none;
+    position: absolute;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    background-color:#ffffff;
+    z-index: 6000;
+    border-radius: 0 0 10px 10px;
+}
+.searcher.on {
+    display: block;
+}
+.searcher ul {
+    margin-bottom: 0;
+    max-height: 100px;
+    overflow: auto;
+}
+.searcher li:hover,
+.searcher li.selected{
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+.searcher li {
+    padding: 5px 0;
+}
+
+
+/*
+############################################################################
+                                   NOTIFICATION
+############################################################################
+*/
+
+
+div.notification_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #666;
+    opacity: 0.5;
+    z-index: 999998;
+}
+div.notification {
+    position: fixed;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+    z-index: 999999;
+    /*width: 33%;*/
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    height: auto;
+}
+div.notification.success {
+    background-color: #99CA6A;
+    color: #fff;
+}
+div.notification.error {
+    background-color: #d9534f;
+    color: #fff;
+}
+div.notification .bt-close {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+@media (min-width: 1px) {
+    div.notification {
+        width: 90%;
+    }
+}
+@media (min-width: 768px) {
+    div.notification {
+        width: 75%;
+    }
+}
+@media (min-width: 992px) {
+    div.notification {
+        width: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    div.notification {
+        width: 33%;
+    }
+}

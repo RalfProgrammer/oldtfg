@@ -1,0 +1,351 @@
+html {
+    overflow-x: hidden;
+}
+html, body, main{
+    background-color: #e5e5e5;
+}
+
+body{
+    height: 100%;
+}
+main {
+    min-height: 100%;
+}
+
+i {
+    cursor: pointer;
+    color: #1F1F1F;
+}
+.btn i {
+    cursor: pointer;
+    color: inherit;
+    margin-right: 5px;
+}
+main, nav, header, footer , div{
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+header.move_right,
+nav.top.move_right,
+main.move_right,
+footer.move_right {
+    transform: translate3d(230px, 0px, 0px);;
+    -ms-transform: translate3d(230px, 0px, 0px);
+    -webkit-transform: translate3d(230px, 0px, 0px);
+}
+
+/*
+############################################################################
+                                   HEADER
+############################################################################
+*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 50px;
+    width: 100%;
+    z-index: 20;
+    text-align: center;
+    background-color: #1aa1e1 ;
+    border-bottom: solid 1px #51BCF0;
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+}
+header > nav.header{
+    font-size: 18px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+header > nav.header a{
+    width: 50px;
+    height: 100%;
+    padding: 16px 0 14px;
+    float: left;
+}
+header > h4,
+header > nav.header i{
+    color: #ffffff;
+}
+header > h4{
+    margin: 0;
+    padding: 15px 0;
+}
+header > nav.header a:first-child{
+    float: left;
+}
+header > nav.header a:last-child{
+    float: right;
+}
+
+header .header_avatar{
+    background-color: #1AA1E1;
+    border-radius: 0 0 15px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+/*
+############################################################################
+                                   TOP MENU
+############################################################################
+*/
+
+nav.top {
+    display: table;
+    width: 100%;
+    height: 25px;
+    background-color: transparent;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+}
+
+nav.top > div {
+    display: table-cell;
+    border: 1px solid #d8d8d8;
+    text-align: center;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    color: pointer;
+}
+
+nav.top > div.div_2 {
+    width: 50%;
+}
+
+nav.top > div.div_3 {
+    width: 33.33%;
+}
+
+nav.top > div.div_ {
+    width: 25%;
+}
+
+nav.top > div.on {
+    border-bottom: 5px solid #1aa1e1;
+}
+/*
+############################################################################
+                                   LEFT MENU
+############################################################################
+*/
+
+nav.left {
+    width: 230px;
+    height: 100%;
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+nav.left,
+nav.left .user i,
+nav.left .user span.name ,
+nav.left .user span.lastname {
+    color: #404040;
+}
+
+/* - User info: */
+
+nav.left .user{
+    position: relative;
+    height: 60px;
+}
+
+nav.left .user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav.left .user div {
+    display: block;
+    padding-left: 55px;
+}
+
+nav.left .user span {
+    display: inline-block;
+    width: 100%;
+}
+
+nav.left .user span.name {
+    font-size:16px;
+    font-weight:700;
+}
+
+nav.left .user span.lastname {
+    font-size:12px;
+    font-weight:700;
+}
+nav.left .user span.name,
+nav.left .user span.lastname {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* - Navigator: */
+
+nav.left li:first-child{
+    border-top: 1px solid #333333;
+}
+
+nav.main li,
+nav.left li{
+    /*border-bottom: 1px solid #333333;*/
+    font-family: 'Lato',sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+nav.left li a{
+    padding: 5px 0;
+}
+nav.left li a label{
+    display: inline-block;
+}
+
+nav.left li span.menu_icon{
+    margin-right: 5px;
+}
+
+nav.main {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    width: 60px;
+    z-index: 9;
+    border-right: 1px solid #d8d8d8;
+    padding: 30px 5px 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    border-bottom-right-radius: 25px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+nav.main ul{
+    margin-bottom: 0;
+}
+nav.main li{
+    text-align: left;
+}
+nav.main li:not(:last-child){
+    margin-bottom: 15px;
+}
+nav.main li a{
+    height: 50px;
+}
+nav.main li,
+nav.main li a,
+nav.main li a label{
+    overflow: hidden;
+}
+nav.main li label{
+    display: inline;
+    text-transform: uppercase;
+}
+nav.main:hover {
+    width: 230px;
+}
+
+.menu_icon .fa.fa-circle {
+    color: #99CA6A;
+}
+/*
+############################################################################
+                                   MAIN
+############################################################################
+*/
+
+main {
+    display: block;
+    padding-top: 90px;
+    padding-left: 3%;
+    padding-right: 3%;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    background-color: inherit;
+    -webkit-box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow:    -2px 0px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow:         -2px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*md y lg*/
+@media (min-width: 992px) {
+    main {
+        padding-left: calc( 50px + 3%);
+    }
+    nav.top {
+        padding-left: calc(50px + 25%);
+        padding-right: 25% ;
+    }
+
+    nav.top > div:first-child {
+        border-bottom-left-radius: 50px;
+    }
+    nav.top > div:last-child {
+        border-bottom-right-radius: 50px;
+    }
+}
+
+main.login {
+    padding-top: 65px;
+}
+
+/*
+############################################################################
+                                   FOOTER
+############################################################################
+*/
+
+footer {
+    z-index: 5;
+}
+
+/*
+############################################################################
+                                   CALL
+############################################################################
+*/
+
+#sip_divRemoteVideo {
+    display: block;
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+#sip_divLocalVideo {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 30%;
+    height: 30%;
+}
+
+#sip_divRemoteVideo video,
+#sip_divLocalVideo video{
+    width: 100%;
+    height: 100%;
+}

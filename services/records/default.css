@@ -1,0 +1,147 @@
+.record_item .record_left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.record_item .record_right {
+    padding-left: 50px;
+}
+.record_item .record_right span.r_title{
+    font-style: italic;
+}
+.hv-record .item_actions i{
+    margin-top: 14px;
+    cursor: pointer;
+}
+.hv-record .list_actions{
+    margin-top: 5px;
+}
+
+/* ################# RECORD ################### */
+
+.hv-record table.user_info{
+    margin-bottom: 10px;
+}
+.hv-record table.user_info,
+.hv-record table.user_info td{
+    border: none;
+    background-color: #fff;
+    text-align: left;
+    padding: 5px 0;
+}
+.hv-record table.user_info td:first-child{
+    width: 100px;
+    font-style: italic;
+}
+.hv-record div.historic_report{
+    min-height: 295px;
+    max-height: 295px;
+    overflow: auto;
+}
+.hv-record .historic_report_text:not(:first-child){
+    margin-top: 10px;
+}
+.hv-record .historic_report_text > div.report_header{
+    cursor: pointer;
+}
+.hv-record .historic_report_text > div.report_header i{
+    margin-right: 5px;
+}
+.hv-record .historic_report_text > div.report_header b{
+    margin-right: 5px;
+}
+.hv-record .historic_report_text > div.report_doctor,
+.hv-record .historic_report_text > div.report_body,
+.hv-record .historic_report_text > div.report_medicines{
+    display: none;
+}
+.hv-record .historic_report_text.on > div.report_doctor,
+.hv-record .historic_report_text.on > div.report_body,
+.hv-record .historic_report_text.on > div.report_medicines{
+    display: block;
+}
+.hv-record .historic_report_text > div:not(.report_header),
+.hv-record .historic_report_text > div > div{
+    padding-left: 20px;
+}
+
+.hv-record .historic_report_text > div:not(.report_header) > span {
+    font-style:italic;
+    text-decoration: underline;
+}
+
+.hv-record div.analytics span.analytic_header{
+    font-style: italic;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 5px;
+}
+.hv-record div.analytics ul.analytic_list{
+    padding-left: 20px;
+}
+.hv-record ul {
+    max-height: 180px;
+    overflow: auto;
+}
+.hv-record .flip_b input[type=text].inp_edited{
+    border-color: #d58512 !important;
+}
+
+/* ################# ANALYTICS ################### */
+
+.analytics table {
+    border: none;
+    margin-bottom: 0;
+}
+.analytics table input[type=text]{
+    margin-bottom: 0;
+}
+.analytics .wp_table {
+    max-height: 175px;
+    overflow: auto;
+}
+.analytics table td,
+.analytics table th{
+    background-color: #fff;
+    border: none;
+    text-align: left;
+    padding: 5px;
+}
+.analytics input[type=text] {
+    padding: 5px;
+    height: 40px;
+}
+.analytics td.item_actions{
+    vertical-align: top;
+}
+
+/* ################# PROTOCOLS ################### */
+
+.box[name=medicines] .medicines_list,
+.box[name=protocols] .protocol_list{
+    margin-bottom: 0;
+    max-height: 180px;
+    overflow: auto;
+}
+.box[name=medicines] .medicines_list li ,
+.box[name=protocols] .protocol_list li {
+    position: relative;
+}
+
+.box[name=medicines] .medicines_list .info_medicine,
+.box[name=protocols] .protocol_list .info_protocol{
+    padding-right: 20px;
+}
+.box[name=protocols] .protocol_list input[type=text] {
+    padding: 5px;
+    height: 40px;
+}
+.box[name=medicines] .medicines_list .item_actions,
+.box[name=protocols] .protocol_list .item_actions{
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+.box[name=medicines] .medicines_list .item_actions i{
+    margin-top: 3px;
+}

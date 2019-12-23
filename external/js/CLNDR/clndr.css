@@ -1,0 +1,50 @@
+.clndr .clndr-controls{
+    position: relative;
+    text-align: center;
+    background-color: #F2F1EF;
+    border: 1px solid #D8D8D8;
+    padding: 5px;
+}
+.clndr i {
+    color: #666;
+}
+.clndr .clndr-controls .clndr-control-button{
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 50px;
+    z-index: 2;
+}
+
+.clndr .clndr-controls .clndr-control-button:not(.rightalign){
+    left: 0;
+}
+
+.clndr .clndr-controls .clndr-control-button.rightalign{
+    right: 0;
+}
+.clndr .clndr-controls .clndr-control-button .clndr-previous-button i,
+.clndr .clndr-controls .clndr-control-button .clndr-next-button i{
+    width: 50px;
+    font-size: 30px;
+}
+
+.clndr .clndr-table thead td {
+    background-color: #f7f7f7;
+}
+.clndr .clndr-table tbody td {
+    background-color: #fff;
+}
+.clndr .clndr-table td {
+    padding: 8px;
+    border-color: #d8d8d8;
+}
+.clndr td.day.event{
+    background-color: #99ca6a;
+    color: #fff;
+    cursor: pointer;
+}
+.clndr td.today{
+    text-decoration: underline;
+    font-weight: bold;
+}
